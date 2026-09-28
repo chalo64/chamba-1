@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         {
             RaycastHit enemyInfo;
             Ray rayo = new Ray(transform.position, transform.forward);
-            Debug.DrawRay(rayo.origin, rayo.direction * 10, Color.pink, 10f);
+            Debug.DrawRay(rayo.origin, rayo.direction * 1.5f, Color.pink, 10f);
             if (Physics.Raycast(rayo.origin, rayo.direction, out enemyInfo, 100f, enemyLayer))
             {
                 Debug.Log(enemyInfo.transform.gameObject.name);
